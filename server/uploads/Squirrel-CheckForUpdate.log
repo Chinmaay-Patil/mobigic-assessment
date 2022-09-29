@@ -1,0 +1,30 @@
+﻿[28-09-22 09:03:08] info: Program: Starting Squirrel Updater: --checkForUpdate https://compass.mongodb.com/api/v2/update/compass/stable/win32-x64/1.33.1
+[28-09-22 09:03:08] info: Program: Fetching update information, downloading from https://compass.mongodb.com/api/v2/update/compass/stable/win32-x64/1.33.1
+[28-09-22 09:03:12] info: CheckForUpdateImpl: Generated new staging user ID: 252ca4bb-0515-599b-9d29-9482762cc216
+[28-09-22 09:03:12] info: CheckForUpdateImpl: Downloading RELEASES file from https://compass.mongodb.com/api/v2/update/compass/stable/win32-x64/1.33.1
+[28-09-22 09:03:17] info: FileDownloader: Downloading url: https://compass.mongodb.com/api/v2/update/compass/stable/win32-x64/1.33.1/RELEASES?id=MongoDBCompass&localVersion=1.33.1&arch=amd64
+[28-09-22 09:03:18] fatal: Finished with unhandled exception: System.AggregateException: One or more errors occurred. ---> System.Exception: Remote release File is empty or corrupted
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.UpdateManager.<CheckForUpdate>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Update.Program.<CheckForUpdate>d__8.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+---> (Inner Exception #0) System.Exception: Remote release File is empty or corrupted
+   at Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.UpdateManager.<CheckForUpdate>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Update.Program.<CheckForUpdate>d__8.MoveNext()<---
+
